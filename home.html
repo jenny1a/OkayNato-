@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('classmate-section').style.display = 'none';
+            document.getElementById('about-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById('project-section').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-box">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="header-box nav-links">
+            <a href="#" onclick="location.reload()">HOME</a>
+            <a href="#" onclick="showSection('classmate-section')">CLASSMATE</a>
+            <a href="#" onclick="showSection('about-section')">ABOUT</a>
+            <a href="#" onclick="showSection('contact-section')">CONTACT</a>
+            <a href="#" onclick="showSection('project-section')">PROJECT</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="section-one">
+            <div class="sec-box">
+                <img src="419bda3f34adc0071dca6912dbda1959.jpg" alt="Image 1">
+            </div>
+            <div class="sec-box myFour">
+                <div class="box"><img src="v.jpg" alt="Image 2"></div>
+                <div class="box"><img src="v.jpg" alt="Image 2"></div>
+                <div class="box"><img src="v.jpg" alt="Image 2"></div>
+                <div class="box"><img src="v1.avif" alt="Image 2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="classmate-section" style="display: none; padding: 50px; text-align: center;">
+        <h2>Classmates</h2>
+        <div class="classmate-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="les.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>leslie Bariquit</strong><br> I swear Boutan ni Sya Pretty pa gyud, the best permi ko ag librihon</p>
+            </div>
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="jay.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>Jay Nino Aquino</strong><br>Basketball player , boutan gihapon ni kung pa itsurahay sad okay ra pud ni hahaha sorry ninss</p>
+            </div>
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="gm.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>Glenn Lugas</strong><br>kani si bossing boutan dali rah gihapon maduolan absenot lang ning demonyo pero honest boutan ni gwapo pud ni</p>
+            </div>
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="mai.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>Maijale Salva</strong><br>friend since day one, very pretty but  a little bit maldita sad ni sa dili nya ka vibe, love you girl!</p>
+            </div>
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="carl.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>Carl Chriatian Flores</strong><br>kani legit grabeh ka boutan i swear maasahan jud</p>
+            </div>
+            <div class="classmate-card" style="display: flex; align-items: center; border: 1px solid #ddd; padding: 10px; border-radius: 10px;">
+                <img src="riv.jpg" alt="Classmate" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 15px;">
+                <p><strong>Rivin Galleros</strong><br>kani happy ni syag lovel life. boutan gihapon dali ma doulan </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-section" style="display: none; padding: 50px; text-align: center; border: 1px solid #ddd; border-radius: 10px; max-width: 700px; margin: auto; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            
+            <div>
+                <img src="me.jpg" alt="Your Photo" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #007BFF;">
+            </div>
+           
+            <div style="border: 1px solid rgba(255, 255, 255, 0.3); padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); text-align: left; max-width: 400px; color: white;">
+                <p><strong>Name:</strong> Jenilyn S. Condeza</p>
+                <p><strong>Age:</strong> 23 </p>
+                <p><strong>Location:</strong> Purok-3a Punong Gingoog City</p>
+                <p><strong>Hobbies:</strong> Sleep,Eat,Sleep</p>
+                <p><strong>Interests:</strong> Nah,kung muingon kog Ikaw! Joke! OHAHAY</p>
+            </div>
+        </div>
+        <p style="margin-top: 20px; color: white;">Welcome to my personal page! I'm passionate about [You], and I love [You]. Feel free to connect with me! hahaha!</p>
+    </div>
+    
+    
+
+    <div id="contact-section" style="display: none; padding: 30px; text-align: center; max-width: 500px; margin: auto; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); color: white;">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Feel free to reach out using the form below.</p>
+        
+        <form style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" placeholder="Your Name" required style="padding: 8px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 5px; background: rgba(255, 255, 255, 0.1); color: white;">
+            <input type="email" placeholder="Your Email" required style="padding: 8px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 5px; background: rgba(255, 255, 255, 0.1); color: white;">
+            <input type="tel" placeholder="Your Phone Number" required style="padding: 8px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 5px; background: rgba(255, 255, 255, 0.1); color: white;">
+            <input type="text" placeholder="Subject" required style="padding: 8px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 5px; background: rgba(255, 255, 255, 0.1); color: white;">
+            <textarea placeholder="Your Message" required style="padding: 8px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 5px; background: rgba(255, 255, 255, 0.1); color: white; height: 100px;"></textarea>
+            <button type="submit" style="padding: 10px; background: rgba(0, 123, 255, 0.7); color: white; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </form>
+    
+        <div style="margin-top: 20px; text-align: left;">
+            <p><strong>Email:</strong> condezajenilyn4@gmail.com</p>
+            <p><strong>Phone:</strong> 09535395949</p>
+            <p><strong>Address:</strong> Purok-3A Punong, Gingoog City, Philippines</p>
+        </div>
+    </div>
+    
+    
+
+    <div id="project-section" style="display: none; padding: 50px; text-align: center; max-width: 800px; margin: auto; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); color: white;">
+        <h2>My Projects</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+           
+            <div>
+                <img src="Screenshot (2).png" alt="Project Image" style="width: 250px; height: 150px; border-radius: 10px; border: 3px solid #007BFF;">
+            </div>
+            
+            <div style="border: 1px solid rgba(255, 255, 255, 0.3); padding: 15px; border-radius: 10px; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); text-align: left; max-width: 400px;">
+                <p><strong>Project Name:</strong> Operation Maka survived ani nga Subject</p>
+                <p><strong>Description:</strong> okay nato! for compliance only hahaha!.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, etc.</p>
+                <p><strong>Completion Date:</strong> 2024-2025</p>
+                <p><strong>Live Demo:</strong> <a href="https://youtube.com/shorts/en9om4LRino?si=X0m2rI_WVVEyvGlb" style="color: #007BFF;">Click here</a></p>
+                <p><strong>GitHub Repo:</strong> <a href="https://jenny1a.github.io/Mylibraryhub/condeza.html" style="color: #007BFF;">View on GitHub</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
